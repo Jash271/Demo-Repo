@@ -73,7 +73,7 @@ def load_image(img_path):
 
 
 def predict(img_path):
-    model = load_model('/home/MobileNet.h5')
+    model = load_model('/tmp/8d989b2ac410aa7/MobileNet.h5')
     new_image = load_image(img_path)
     pred = model.predict(new_image)
     z = np.argmax(pred)
